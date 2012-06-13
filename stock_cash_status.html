@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>X-Force</title>
+		<link rel="stylesheet"  href="CSS/jquery.mobile.theme-1.1.0.min.css" />
+		<link rel="stylesheet"  href="CSS/jquery.mobile-1.1.0.min.css" />
+		<script src="Scripts/jquery.js"></script>
+		<script src="Scripts/jquery.mobile-1.1.0.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" class="type-interior">
+			<div data-role="header" data-theme="b">
+				<h1>Stock/Cash Status</h1>
+				<a  data-rel="back" data-icon="back" data-iconpos="notext" data-direction="reverse">Back</a>
+				<a href="user_dashboard.html" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+			</div><!-- /header -->
+			<div data-role="content">
+				<div class="content-primary">
+					<div class="ui-grid-a">
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-b"  >
+								Stock Balance
+							</div>
+							<ul>
+								<li>
+									<strong>250 ml Packs</strong> - 500
+								</li>
+								<li>
+									<strong>500 ml Packs</strong> - 70
+								</li>
+								<li>
+									<strong>1 Litre Packs</strong> - 0
+								</li>
+							</ul>
+						</div>
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-b"  >
+								Cash Balance
+							</div>
+							25,000
+						</div>
+					</div>
+					<form action="save_questionnaire" method="post">
+						<h2>New Cash Receipt</h2>
+						<label for="amount">Amount Received:</label>
+						<input type="text" name="amount" id="amount" value=""  />
+						<button type="submit" data-theme="b">
+							Save
+						</button>
+					</form>
+				</div><!--/content-primary -->
+			</div><!-- /content -->
+			<div data-role="footer" class="footer-docs" data-theme="c">
+				<p>
+					&copy; 2012 X-Force inc.
+				</p>
+			</div>
+		</div><!-- /page -->
+	</body>
+</html>

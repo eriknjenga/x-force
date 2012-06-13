@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>X-Force</title>
+		<link rel="stylesheet"  href="CSS/jquery.mobile.theme-1.1.0.min.css" />
+		<link rel="stylesheet"  href="CSS/jquery.mobile-1.1.0.min.css" />
+		<script src="Scripts/jquery.js"></script>
+		<script src="Scripts/jquery.mobile-1.1.0.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" class="type-interior">
+			<div data-role="header" data-theme="b">
+				<h1>New Sale</h1>
+				<a  data-rel="back" data-icon="back" data-iconpos="notext" data-direction="reverse">Back</a>
+				<a href="user_dashboard.html" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+			</div><!-- /header -->
+			<div data-role="content">
+				<div class="content-primary">
+					<form action="save_questionnaire" method="post">
+						<h2>Sale Details</h2>
+						<label for="merchant">Merchant:</label>
+						<select name="merchant" id="merchant">
+							<option value=""></option>
+							<option value="AK"></option>
+							<option value="AK">Merchant 1</option>
+							<option value="AK">Merchant 2</option>
+							<option value="AK">Merchant 3</option>
+						</select>
+						<label for="product">Product Description:</label>
+						<select name="product" id="product">
+							<option value=""></option> 
+							<option value="AK">250 ml Pack</option>
+							<option value="AK">500 ml Pack</option>
+							<option value="AK">1 Litre</option>
+						</select>
+						<label for="quantity">Quantity Sold:</label>
+						<input type="text" name="quantity" id="quantity" value=""  />
+						<label for="total">Total Sale Value:</label>
+						<input type="text" name="total" id="total" value=""  />
+						<div class="ui-body ui-body-b">
+							<fieldset class="ui-grid-a">
+								<div class="ui-block-a">
+									<button type="submit" data-theme="b">
+										Save
+									</button>
+								</div>
+								<div class="ui-block-b">
+									<button type="submit" data-theme="b">
+										Save &amp; Add New
+									</button>
+								</div>
+							</fieldset>
+						</div>
+					</form>
+				</div><!--/content-primary -->
+			</div><!-- /content -->
+			<div data-role="footer" class="footer-docs" data-theme="c">
+				<p>
+					&copy; 2012 X-Force inc.
+				</p>
+			</div>
+		</div><!-- /page -->
+	</body>
+</html>

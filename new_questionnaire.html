@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>X-Force</title>
+		<link rel="stylesheet"  href="CSS/jquery.mobile.theme-1.1.0.min.css" />
+		<link rel="stylesheet"  href="CSS/jquery.mobile-1.1.0.min.css" />
+		<script src="Scripts/jquery.js"></script>
+		<script src="Scripts/jquery.mobile-1.1.0.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" class="type-interior">
+			<div data-role="header" data-theme="b">
+				<h1>New Questionnaire</h1>
+				<a  data-rel="back" data-icon="back" data-iconpos="notext" data-direction="reverse">Back</a>
+				<a href="user_dashboard.html" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+			</div><!-- /header -->
+			<div data-role="content">
+				<div class="content-primary">
+					<form action="save_questionnaire" method="post">
+						<h2>Questionnaire Form</h2>
+						<label for="product">Product:</label>
+						<select name="product" id="product">
+							<option value=""></option>
+							<option value="AK">Cigarettes</option>
+						</select>
+						<label for="brand">Brand:</label>
+						<select name="brand" id="brand">
+							<option value=""></option>
+							<option value="AK">Sports Man</option>
+							<option value="AK">Dunhill</option>
+							<option value="AK">Roster</option>
+						</select>
+						<label for="select-choice-3" class="select">Select Shop:</label>
+						<select name="select-choice-3" id="select-choice-3">
+							<option value=""></option>
+							<option value="AL">Can Enterprises</option>
+							<option value="AK">Capital Hardware</option>
+							<option value="AZ">E K Wachira &amp; Sons (K) Ltd</option>
+							<option value="AR">Ndengeri K Butchery</option>
+						</select>
+						<div style="text-align: center">
+							<strong>-OR-</strong>
+						</div>
+						<label for="shop_name">Shop Name:</label>
+						<input type="text" name="shop_name" id="shop_name" value=""  />
+						<fieldset data-role="controlgroup">
+							<legend>
+								Have you heard of the product?
+							</legend>
+							<input type="radio" name="heard_of_product" id="heard_of_product_1" value="choice-1" checked="checked" />
+							<label for="heard_of_product_1">Yes</label>
+							<input type="radio" name="heard_of_product" id="heard_of_product_2" value="choice-2"  />
+							<label for="heard_of_product_2">No</label>
+						</fieldset>
+						<fieldset data-role="controlgroup">
+							<legend>
+								Do you stock it?
+							</legend>
+							<input type="radio" name="stock_product" id="stock_product_1" value="choice-1" checked="checked" />
+							<label for="stock_product_1">Yes</label>
+							<input type="radio" name="stock_product" id="stock_product_2" value="choice-2"  />
+							<label for="stock_product_2">No</label>
+						</fieldset>
+						<fieldset data-role="controlgroup">
+							<legend>
+								If not will you buy it?
+							</legend>
+							<input type="radio" name="buy_product" id="buy_product_1" value="choice-1" checked="checked" />
+							<label for="buy_product_1">Yes</label>
+							<input type="radio" name="buy_product" id="buy_product_2" value="choice-2"  />
+							<label for="buy_product_2">No</label>
+						</fieldset>
+						<label for="quantity">Sale Quantity:</label>
+						<input type="text" name="quantity" id="quantity" value=""  />
+						<label for="amount">Total Sale Amount:</label>
+						<input type="text" name="amount" id="amount" value=""  />
+						<label for="remarks">Remarks:</label>
+						<textarea cols="40" rows="8" name="remarks" id="remarks"></textarea>
+						<div class="ui-body ui-body-b">
+							<fieldset class="ui-grid-a">
+								<div class="ui-block-a">
+									<button type="reset" data-theme="d">
+										Cancel
+									</button>
+								</div>
+								<div class="ui-block-b">
+									<button type="submit" data-theme="a">
+										Save
+									</button>
+								</div>
+							</fieldset>
+						</div>
+					</form>
+				</div><!--/content-primary -->
+			</div><!-- /content -->
+			<div data-role="footer" class="footer-docs" data-theme="c">
+				<p>
+					&copy; 2012 X-Force inc.
+				</p>
+			</div>
+		</div><!-- /page -->
+	</body>
+</html>

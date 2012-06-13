@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>X-Force</title>
+		<link rel="stylesheet"  href="CSS/jquery.mobile.theme-1.1.0.min.css" />
+		<link rel="stylesheet"  href="CSS/jquery.mobile-1.1.0.min.css" />
+		<script src="Scripts/jquery.js"></script>
+		<script src="Scripts/jquery.mobile-1.1.0.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" class="type-interior">
+			<div data-role="header" data-theme="b">
+				<h1>New Merchant</h1>
+				<a  data-rel="back" data-icon="back" data-iconpos="notext" data-direction="reverse">Back</a>
+				<a href="user_dashboard.html" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+			</div><!-- /header -->
+			<div data-role="content">
+				<div class="content-primary">
+					<form action="save_questionnaire" method="post">
+						<h2>Merchant Details</h2>
+						<label for="merchant_name">Merchant Name:</label>
+						<input type="text" name="merchant_name" id="merchant_name" value=""  />
+						<label for="location">Location:</label>
+						<input type="text" name="location" id="location" value=""  />
+						<label for="area">Area:</label>
+						<select name="area" id="area">
+							<option value=""></option>
+							<option value="AK">Gatundu</option>
+							<option value="AK">Nyandarua North</option>
+							<option value="AK">Nyandarua South</option>
+							<option value="AK">Westlands</option>
+						</select>
+						<label for="district">District:</label>
+						<select name="district" id="district">
+							<option value=""></option>
+							<option value="AK">Dagoretti</option>
+							<option value="AK">Kawangware</option>
+							<option value="AK">Riruta</option>
+							<option value="AK">Lavington</option>
+						</select>
+						<fieldset data-role="controlgroup">
+							<legend>
+								Ownership Structure
+							</legend>
+							<input type="radio" name="ownership" id="ownership_1" value="choice-1" checked="checked" />
+							<label for="ownership_1">Sole Propriator</label>
+							<input type="radio" name="ownership" id="ownership_2" value="choice-2"  />
+							<label for="ownership_2">Joint Venture</label>
+						</fieldset>
+						<fieldset data-role="controlgroup">
+							<legend>
+								Do you stock the product?
+							</legend>
+							<input type="radio" name="stock_product" id="stock_product_1" value="choice-1" checked="checked" />
+							<label for="stock_product_1">Yes</label>
+							<input type="radio" name="stock_product" id="stock_product_2" value="choice-2"  />
+							<label for="stock_product_2">No</label>
+						</fieldset>
+						<label for="district">If so, from which distributor:</label>
+						<select name="district" id="district">
+							<option value=""></option>
+							<option value="AK">Mwangi Wholesalers</option>
+							<option value="AK">S &amp; M Partners</option> 
+						</select>
+						
+						<div class="ui-body ui-body-b">
+							<fieldset class="ui-grid-a">
+								<div class="ui-block-a">
+									<button type="submit" data-theme="b">
+										Save
+									</button>
+								</div>
+								<div class="ui-block-b">
+									<button type="submit" data-theme="b">
+										Save &amp; Sell
+									</button>
+								</div>
+							</fieldset>
+						</div>
+					</form>
+				</div><!--/content-primary -->
+			</div><!-- /content -->
+			<div data-role="footer" class="footer-docs" data-theme="c">
+				<p>
+					&copy; 2012 X-Force inc.
+				</p>
+			</div>
+		</div><!-- /page -->
+	</body>
+</html>
